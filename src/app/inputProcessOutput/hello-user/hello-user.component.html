@@ -1,0 +1,7 @@
+<div>
+  <p>What is your name?</p>
+  <input type="text" placeholder="이름입력" [(ngModel)]="name">
+</div>
+<div>
+  <p *ngIf="name">Hello, {{name}}! Nice to meet you!</p>
+</div>

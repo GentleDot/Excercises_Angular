@@ -1,0 +1,19 @@
+<!--
+  -- Pseudocode --
+  Initialize
+  Prompt
+  Convert
+  Display
+  End
+  -----------------
+
+  Display "What is the input string?"
+  Input String
+  Count length of inputString.
+  display "[input] has 5 characters."
+-->
+<div>
+  <p>What is the input string?</p>
+  <input type="text"  #inputStr (keydown.enter)="doPrintRslt(inputStr.value)"/>
+  <p *ngIf="userNm">{{userNm}} has {{userNmStrCnt}} characters.</p>
+</div>

@@ -8,7 +8,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## 입력,프로세싱,출력
 - Keyword
-  - 컴포넌트, 데이터 바인딩, 이벤트 바인딩, 프로퍼티 바인딩, 템플릿 참조 변수, 양방향 바인딩 
+  - 컴포넌트, 데이터 바인딩, 이벤트 바인딩, 프로퍼티 바인딩, 템플릿 참조 변수, 양방향 바인딩,
+   getter(get), setter(set)
 
 
 ## Development server

@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HelloUserComponent } from './inputProcessOutput/hello-user/hello-user.component';
 import {COMPOSITION_BUFFER_MODE, FormsModule} from "@angular/forms";
 import { StrCntComponent } from './inputProcessOutput/str-cnt/str-cnt.component';
+import { EscapeCharacterComponent } from './inputProcessOutput/escape-character/escape-character.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloUserComponent,
     StrCntComponent,
+    EscapeCharacterComponent,
   ],
   imports: [
     BrowserModule,

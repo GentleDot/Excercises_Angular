@@ -15,5 +15,6 @@
 <div>
   <p>What is the input string?</p>
   <input type="text"  #inputStr (keydown.enter)="doPrintRslt(inputStr.value)"/>
+  <!--<input type="text"  #inputStr (keydown)="doPrintRslt(inputStr.value)"/>-->
   <p *ngIf="userNm">{{userNm}} has {{userNmStrCnt}} characters.</p>
 </div>

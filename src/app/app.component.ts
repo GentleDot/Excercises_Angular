@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'practiceNg';
+
+  quoteStr: string;
+
+  printQuoteStr(str: string){
+    this.quoteStr = str;
+  }
+
 }

@@ -1,0 +1,8 @@
+<div>
+  <p>인용구를 입력하세요.</p>
+  <input type="text" [(ngModel)]="quote" />
+  <p>이 말을 한 사람은?</p>
+  <input type="text/" [(ngModel)]="name">
+  <button type="button" (click)="btnClick()">확인</button>
+  <p *ngIf="quote && name" >{{rsltStr}}</p>
+</div>

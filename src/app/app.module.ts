@@ -7,6 +7,7 @@ import { HelloUserComponent } from './inputProcessOutput/hello-user/hello-user.c
 import {COMPOSITION_BUFFER_MODE, FormsModule} from "@angular/forms";
 import { StrCntComponent } from './inputProcessOutput/str-cnt/str-cnt.component';
 import { EscapeCharacterComponent } from './inputProcessOutput/escape-character/escape-character.component';
+import { MadLibsComponent } from './inputProcessOutput/mad-libs/mad-libs.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { EscapeCharacterComponent } from './inputProcessOutput/escape-character/
     HelloUserComponent,
     StrCntComponent,
     EscapeCharacterComponent,
+    MadLibsComponent,
   ],
   imports: [
     BrowserModule,

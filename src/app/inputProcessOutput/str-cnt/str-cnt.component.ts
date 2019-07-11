@@ -19,6 +19,8 @@ export class StrCntComponent implements OnInit {
     }
     this.userNm = inputStr;
     this.userNmStrCnt = inputStr.length;
+
+    String
   }
 
 }

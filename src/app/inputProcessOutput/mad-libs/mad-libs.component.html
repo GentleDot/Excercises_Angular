@@ -1,0 +1,9 @@
+<div>
+  <p>명사, 동사, 형용사, 부사 입력</p>
+  <input type="text" placeholder="명사를 입력하세요." [(ngModel)]="noun"/>
+  <input type="text" placeholder="동사를 입력하세요." [(ngModel)]="verb"/>
+  <input type="text" placeholder="형용사를 입력하세요." [(ngModel)]="adjective"/>
+  <input type="text" placeholder="부사를 입력하세요." [(ngModel)]="adverb"/>
+
+  <p *ngIf="noun && verb && adjective && adverb">{{adjective}} {{noun}}이(가) {{adverb}} {{verb}}! 그 말이 사실인가?  </p>
+</div>

@@ -4,10 +4,11 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloUserComponent } from './inputProcessOutput/hello-user/hello-user.component';
-import {COMPOSITION_BUFFER_MODE, FormsModule} from "@angular/forms";
+import {COMPOSITION_BUFFER_MODE, FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { StrCntComponent } from './inputProcessOutput/str-cnt/str-cnt.component';
 import { EscapeCharacterComponent } from './inputProcessOutput/escape-character/escape-character.component';
 import { MadLibsComponent } from './inputProcessOutput/mad-libs/mad-libs.component';
+import { SimpleMathComponent } from './inputProcessOutput/simple-math/simple-math.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +17,13 @@ import { MadLibsComponent } from './inputProcessOutput/mad-libs/mad-libs.compone
     StrCntComponent,
     EscapeCharacterComponent,
     MadLibsComponent,
+    SimpleMathComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     {

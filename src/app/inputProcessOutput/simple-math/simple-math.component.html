@@ -1,0 +1,13 @@
+<div>
+  <form [formGroup]="mathForm">
+      <p>
+      <span>What is the first number? </span>
+      <input type="number" id="firstNum"  [(ngModel)]="num1" formControlName="firstNum" />
+      <i style="color: red; font-weight: bold" *ngIf="mathForm.controls['firstNum'].hasError('max')" color="red">** 0 ~ 100 사이의 숫자 입력 가능.</i>
+    </p>
+    <p>
+      <span>What is the second number? </span>
+      <input type="number" [(ngModel)]="num2"/>
+    </p>
+  </form>
+</div>

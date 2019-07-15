@@ -1,8 +1,8 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { SimpleMathComponent } from './simple-math.component';
+import { SimpleMathComponent } from "./simple-math.component";
 
-describe('SimpleMathComponent', () => {
+describe("SimpleMathComponent", () => {
   let component: SimpleMathComponent;
   let fixture: ComponentFixture<SimpleMathComponent>;
 
@@ -19,7 +19,7 @@ describe('SimpleMathComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

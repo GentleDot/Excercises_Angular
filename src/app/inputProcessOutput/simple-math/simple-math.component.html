@@ -1,13 +1,26 @@
 <div>
   <form [formGroup]="mathForm">
+    <div>
       <p>
       <span>What is the first number? </span>
-      <input type="number" id="firstNum"  [(ngModel)]="num1" formControlName="firstNum" />
-      <i style="color: red; font-weight: bold" *ngIf="mathForm.controls['firstNum'].hasError('max')" color="red">** 0 ~ 100 사이의 숫자 입력 가능.</i>
+      <input type="text" id="firstNum" [(ngModel)]="num1" formControlName="firstNum"/>
+      <i style="color: red; font-weight: bold"
+         *ngIf="mathForm.controls.firstNum.hasError('max') || mathForm.controls.firstNum.hasError('pattern')"
+         color="red">** 0 ~ 100 사이의 숫자 입력 가능.</i>
     </p>
-    <p>
-      <span>What is the second number? </span>
-      <input type="number" [(ngModel)]="num2"/>
-    </p>
+      <p>
+        <span>What is the second number? </span>
+        <input type="text" [(ngModel)]="num2" formControlName="secondNum"/>
+        <i style="color: red; font-weight: bold"
+           *ngIf="mathForm.controls.secondNum.hasError('max') || mathForm.controls.secondNum.hasError('pattern')"
+           color="red">** 0 ~ 100 사이의 숫자 입력 가능.</i>
+      </p>
+    </div>
+    <div *ngIf="mathForm.valid">
+      <p *ngIf="mathForm.valid">{{num1}} + {{num2}} = {{onAddtion()}}</p>
+      <p *ngIf="mathForm.valid">{{num1}} - {{num2}} = {{onSubtraction()}}</p>
+      <p *ngIf="mathForm.valid">{{num1}} * {{num2}} = {{onMultiplication()}}</p>
+      <p *ngIf="mathForm.valid">{{num1}} / {{num2}} = {{onDivision()}}</p>
+    </div>
   </form>
 </div>

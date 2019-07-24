@@ -1,0 +1,10 @@
+<div>
+  <div>
+    <p>What is your current age? &nbsp; <input type="text" [(ngModel)]="inputAge" /></p>
+    <p>At what age would you like to retire? &nbsp; <input type="text" [(ngModel)]="inputRetireAge"/></p>
+  </div>
+  <div>
+    <p *ngIf="inputAge && inputRetireAge">You have {{retireCal()}} years left until you can retire.</p>
+    <p *ngIf="inputAge && inputRetireAge">It's {{nowYear}}, {{getRemainYear()}}.</p>
+  </div>
+</div>

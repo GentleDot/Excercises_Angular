@@ -9,6 +9,7 @@ import { StrCntComponent } from './inputProcessOutput/str-cnt/str-cnt.component'
 import { EscapeCharacterComponent } from './inputProcessOutput/escape-character/escape-character.component';
 import { MadLibsComponent } from './inputProcessOutput/mad-libs/mad-libs.component';
 import { SimpleMathComponent } from './inputProcessOutput/simple-math/simple-math.component';
+import { EntireCalculatorComponent } from './inputProcessOutput/entire-calculator/entire-calculator.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { SimpleMathComponent } from './inputProcessOutput/simple-math/simple-mat
     EscapeCharacterComponent,
     MadLibsComponent,
     SimpleMathComponent,
+    EntireCalculatorComponent,
   ],
   imports: [
     BrowserModule,

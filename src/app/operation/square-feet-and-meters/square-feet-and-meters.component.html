@@ -1,0 +1,14 @@
+<div>
+  <form formGroupName="squareForm">
+    <div>
+      <p>What is the length of the room in feet? <input type="text" [(ngModel)]="length" formControlName="firstNum"/></p>
+      <p>What is the width of the room in feet? <input type="text" [(ngModel)]="width" formControlName="secondNum"></p>
+      <p>You entered dimensions of {{length}} feet by {{width}} feet</p>
+    </div>
+    <div *ngIf="squareForm.valid">
+      <p>The area is </p>
+      <p>f square feet</p>
+      <p>m square meters</p>
+    </div>
+  </form>
+</div>

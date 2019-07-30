@@ -1,0 +1,15 @@
+<div [formGroup]="pizzaForm">
+  <div>
+    <p> How many people? <input type="text" formControlName="firstNum"/></p>
+    <p> How many pizza do you have? <input type="text" formControlName="secondNum"/></p>
+    <p> How many pieces are in a pizza? <input type="text" formControlName="thirdNum"/></p>
+  </div>
+
+
+  <div *ngIf="pizzaForm.valid">
+    <p> {{personNum}} people with {{pizzaNum}} pizza<span *ngIf="pizzaNum > 1">s</span></p>
+    <p> Each person gets {{onPizzaPieceCal()}} piece<span *ngIf="onPizzaPieceCal() > 1">s</span> of pizza.
+    </p>
+    <p> There are {{pizzaPiecesMod}} leftover piece<span *ngIf="pizzaPiecesMod > 1">s</span>. </p>
+  </div>
+</div>

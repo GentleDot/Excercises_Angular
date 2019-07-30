@@ -11,6 +11,7 @@ import { MadLibsComponent } from "./inputProcessOutput/mad-libs/mad-libs.compone
 import { SimpleMathComponent } from "./inputProcessOutput/simple-math/simple-math.component";
 import { EntireCalculatorComponent } from "./inputProcessOutput/entire-calculator/entire-calculator.component";
 import { SquareFeetAndMetersComponent } from "./operation/square-feet-and-meters/square-feet-and-meters.component";
+import { PizzaPartyComponent } from './operation/pizza-party/pizza-party.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SquareFeetAndMetersComponent } from "./operation/square-feet-and-meters
     SimpleMathComponent,
     EntireCalculatorComponent,
     SquareFeetAndMetersComponent,
+    PizzaPartyComponent,
   ],
   imports: [
     BrowserModule,

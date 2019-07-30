@@ -7,6 +7,7 @@ import {MadLibsComponent} from "./inputProcessOutput/mad-libs/mad-libs.component
 import {SimpleMathComponent} from "./inputProcessOutput/simple-math/simple-math.component";
 import {EntireCalculatorComponent} from "./inputProcessOutput/entire-calculator/entire-calculator.component";
 import {SquareFeetAndMetersComponent} from "./operation/square-feet-and-meters/square-feet-and-meters.component";
+import {PizzaPartyComponent} from "./operation/pizza-party/pizza-party.component";
 
 
 const routes: Routes = [
@@ -21,7 +22,8 @@ const routes: Routes = [
   ]},
   {path: "chapter2",
   children: [
-    {path: "test1", component: SquareFeetAndMetersComponent}
+    {path: "test1", component: SquareFeetAndMetersComponent},
+    {path: "test2", component: PizzaPartyComponent},
   ]}
 ];
 

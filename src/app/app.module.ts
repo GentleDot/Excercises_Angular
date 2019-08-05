@@ -12,6 +12,7 @@ import { SimpleMathComponent } from "./inputProcessOutput/simple-math/simple-mat
 import { EntireCalculatorComponent } from "./inputProcessOutput/entire-calculator/entire-calculator.component";
 import { SquareFeetAndMetersComponent } from "./operation/square-feet-and-meters/square-feet-and-meters.component";
 import { PizzaPartyComponent } from './operation/pizza-party/pizza-party.component';
+import { PaintCalculatorComponent } from './operation/paint-calculator/paint-calculator.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { PizzaPartyComponent } from './operation/pizza-party/pizza-party.compone
     EntireCalculatorComponent,
     SquareFeetAndMetersComponent,
     PizzaPartyComponent,
+    PaintCalculatorComponent,
   ],
   imports: [
     BrowserModule,

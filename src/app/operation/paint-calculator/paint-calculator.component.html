@@ -1,0 +1,4 @@
+<div [formGroup]="inputForm">
+  <p>How many paint to cover <input type="text" formControlName="firstNum" /> square meters? </p>
+  <p>You will need to purchase <span *ngIf="inputForm.valid">{{onCalPaintQty()}}</span> liters Paint </p>
+</div>

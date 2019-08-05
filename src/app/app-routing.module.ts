@@ -8,6 +8,7 @@ import {SimpleMathComponent} from "./inputProcessOutput/simple-math/simple-math.
 import {EntireCalculatorComponent} from "./inputProcessOutput/entire-calculator/entire-calculator.component";
 import {SquareFeetAndMetersComponent} from "./operation/square-feet-and-meters/square-feet-and-meters.component";
 import {PizzaPartyComponent} from "./operation/pizza-party/pizza-party.component";
+import {PaintCalculatorComponent} from "./operation/paint-calculator/paint-calculator.component";
 
 
 const routes: Routes = [
@@ -24,6 +25,7 @@ const routes: Routes = [
   children: [
     {path: "test1", component: SquareFeetAndMetersComponent},
     {path: "test2", component: PizzaPartyComponent},
+    {path: "test3", component: PaintCalculatorComponent},
   ]}
 ];
 

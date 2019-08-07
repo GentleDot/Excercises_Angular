@@ -14,7 +14,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## 연산
 - keyword
     - routeModule, Reactive Form, Model Driven Form, Template Driven Form
-
+    - FormGroup과 FormBuilder, FormArray와 ngFor 활용, FormGroup.status
 
 ## Development server
 

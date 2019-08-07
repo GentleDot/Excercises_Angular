@@ -1,0 +1,19 @@
+<div [formGroup]="initForm">
+  <div>
+    <p>-- 상품 입력 --</p>
+    <div formArrayName="items">
+      <div *ngFor="let item of addFormArray.controls; let i = index" [formGroupName]="i">
+        <p>Price of item {{i + 1}} : <input type="text" formControlName="price"/></p>
+        <p>Quantity of item {{i + 1}} : <input type="text" formControlName="quantity"/></p>
+      </div>
+    </div>
+    <p><button type="button" (click)="calData()">확인</button></p>
+    <div *ngIf="rsltFlag">
+      <p>-- 결과 출력 --</p>
+      <p>SubTotal : {{subTotal}}</p>
+      <p>Tax : {{tax}}</p>
+      <p>Total : {{total}}</p>
+    </div>
+    <p>Status : {{initForm.status}}</p>
+  </div>
+</div>

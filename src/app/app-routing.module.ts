@@ -10,6 +10,7 @@ import {SquareFeetAndMetersComponent} from "./operation/square-feet-and-meters/s
 import {PizzaPartyComponent} from "./operation/pizza-party/pizza-party.component";
 import {PaintCalculatorComponent} from "./operation/paint-calculator/paint-calculator.component";
 import {SelfCheckoutComponent} from "./operation/self-checkout/self-checkout.component";
+import {ExchangeRateComponent} from "./operation/exchange-rate/exchange-rate.component";
 
 
 const routes: Routes = [
@@ -28,6 +29,7 @@ const routes: Routes = [
     {path: "test2", component: PizzaPartyComponent},
     {path: "test3", component: PaintCalculatorComponent},
     {path: "test4", component: SelfCheckoutComponent},
+    {path: "test5", component: ExchangeRateComponent},
   ]}
 ];
 

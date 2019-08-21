@@ -1,0 +1,12 @@
+<div [formGroup] = "inputForm">
+<div>
+  <p>How many Euros are you exchanging? <input type="text" formControlName="input"/></p>
+  <p>What is the exchange rate? <input type="text" formControlName="rate"/></p>
+  <div>
+    <button type="button" (click)="onClickBtn()">출력</button>
+  </div>
+</div>
+<div>
+  <p>{{amountFrom}} Euros at an exchange rate of {{rateFrom}} is {{amountTo}} dollars. </p>
+</div>
+</div>

@@ -15,6 +15,7 @@ import { PizzaPartyComponent } from './operation/pizza-party/pizza-party.compone
 import { PaintCalculatorComponent } from './operation/paint-calculator/paint-calculator.component';
 import { SelfCheckoutComponent } from './operation/self-checkout/self-checkout.component';
 import { ExchangeRateComponent } from './operation/exchange-rate/exchange-rate.component';
+import { SimpleInterestComponent } from './operation/simple-interest/simple-interest.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ExchangeRateComponent } from './operation/exchange-rate/exchange-rate.c
     PaintCalculatorComponent,
     SelfCheckoutComponent,
     ExchangeRateComponent,
+    SimpleInterestComponent,
   ],
   imports: [
     BrowserModule,

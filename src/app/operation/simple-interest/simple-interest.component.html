@@ -1,0 +1,11 @@
+<div [formGroup]="inputForm">
+  <div>
+    <p>Enter the principal : <input type="text" formControlName="input1" /></p>
+    <p>Enter the rate of interest : <input type="text" formControlName="input2" /></p>
+    <p>Enter the number of years : <input type="text" formControlName="input3" /></p>
+    <p><button type="button" (click)="onBtnCalculate()">계산</button></p>
+  </div>
+  <div *ngIf="inputForm.valid && this.investment">
+    <p>After {{years}} years at {{rateOfInterest}}%, the investment will be worth ${{investment}}</p>
+  </div>
+</div>

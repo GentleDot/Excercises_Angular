@@ -24,7 +24,7 @@ export class ExchangeRateComponent implements OnInit {
     });
   }
 
-  ngOnInit() {d
+  ngOnInit() {
 
   }
 
